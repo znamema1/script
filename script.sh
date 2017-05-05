@@ -1,5 +1,5 @@
 #!/bin/bash
 
-
-read -r INPUT
-echo "$INPUT" | tr 'a-zA-Z' 'A-Za-z'
+while read -r INPUT; do
+    echo "$INPUT" | tr 'a-zA-Z' 'A-Za-z'
+done
