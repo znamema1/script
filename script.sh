@@ -1,5 +1,5 @@
 #!/bin/bash
 
 while read -r INPUT; do
-    echo "$INPUT" | tr 'a-zA-Z' 'A-Za-z'
+    echo "$INPUT" | sed -e 's/([[:lower:]])|([[:upper:]])/\U\1\L\2/g'
 done
